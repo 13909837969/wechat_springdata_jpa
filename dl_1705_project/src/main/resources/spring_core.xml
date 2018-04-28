@@ -24,7 +24,6 @@
 	<!-- base-package:用于扫描的包 resource-pattern:扫描的目录，默认值 **/*.calss 默认是级联，（当前包、和所有子包.) 
 		use-default-filters 默认为true @Component, @Repository, @Service, @Controller 
 		作用：Spring容器来管理这些对象（对象的创建） -->
-	<context:component-scan base-package="com.qfjy"></context:component-scan>
 	
 
 	<!-- 第一步 加载jdbc.properties -->
@@ -81,7 +80,7 @@
 		如果proxy-target-class 属性值被设置为true，那么基于类的代理将起作用（这时需要cglib库）。
 		如果proxy-target-class属值被设置为false或者这个属性被省略，那么标准的JDK 基于接口的代理将起作用
 	 -->   
-	<tx:annotation-driven transaction-manager="transactionManager" proxy-target-class="true"   />
+	<tx:annotation-driven transaction-manager="transactionManager"  proxy-target-class="true"  />
    
     
     <!-- 

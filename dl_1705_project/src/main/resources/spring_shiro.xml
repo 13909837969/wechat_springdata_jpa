@@ -61,7 +61,7 @@
         <!--未认证 ： 登录页面 -->
         <property name="loginUrl" value="/pages/admin/login.jsp"/>
         <!-- 认证后，才能访问的页面 -->
-        <property name="successUrl" value="/pages/admin/succ.jsp"/>
+        <property name="successUrl" value="/pages/admin/index.jsp"/>
         <!-- 认证后，无权限页面 -->
         <property name="unauthorizedUrl" value="/unauthor.jsp"/>
       <!-- 

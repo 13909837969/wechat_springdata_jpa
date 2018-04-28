@@ -27,7 +27,7 @@ public class ShiroRealm extends AuthorizingRealm {
 	protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken token) throws AuthenticationException {
 		//1token转换成UsernamePasswordToken
 				UsernamePasswordToken upToken=(UsernamePasswordToken) token;
-				//upToken.getPassword();
+			 	//upToken.getPassword();
 				//2获得用户名
 				String uname=upToken.getUsername();
 				//3根据用户名查询数据库
