@@ -27,13 +27,7 @@ public class MenuManager {
 
  */
 	
-<<<<<<< .mine
 	public final static String REAL_URL="http://h2ueif.natappfree.cc/dl_1705_project/"; //个人花生壳
-||||||| .r21
-	public final static String REAL_URL="http://3ikncm.natappfree.cc/dl_1705_project/"; //个人花生壳
-=======
-	public final static String REAL_URL="http://weixinguo.s1.natapp.cc/dl_1705_project/"; //个人花生壳
->>>>>>> .r23
 	//public final static String REAL_URL = "http://wxmobsa.yidatec.com/weixin/"; //正式号服务器	
 	
 	public final static String appId="wxe545a87dd58d472c";
@@ -84,59 +78,50 @@ public class MenuManager {
 
 		
 		ViewButton btn10 = new ViewButton();
-		btn10.setName("会议发布");
+		btn10.setName("百度网页");
 		btn10.setType("view");
 		btn10.setUrl("https://www.baidu.com/");
 		
-		ViewButton btn11 = new ViewButton();
-		btn11.setName("会议抢单");
-		btn11.setType("view");
-		btn11.setUrl("https://www.baidu.com/");
 		
-		
-	
+		CommonButton btn11 = new CommonButton();
+		btn11.setName("事件1");
+		btn11.setType("scancode_push");
+		btn11.setKey("1");
 		
 //-------------------------------------------------------
-
-		ViewButton btn20 = new ViewButton();
-		btn20.setName("抢单排行榜");
-		btn20.setType("view");
-		btn20.setUrl("https://www.sina.com/");
-
+		CommonButton btn20 = new CommonButton();
+		btn20.setName("事件2");
+		btn20.setType("click");
+		btn20.setKey("2");
 		
 		ViewButton btn21 = new ViewButton();
-		btn21.setName("发单排行榜");
+		btn21.setName("新浪网页");
 		btn21.setType("view");
 		btn21.setUrl("https://www.sina.com/");
 
 //------------------------------------------------------------	
 		CommonButton btn30 = new CommonButton();
-		btn30.setName("联系我们");
+		btn30.setName("事件3");
 		btn30.setType("click");
-		btn30.setKey("30");
+		btn30.setKey("3");
 		
 		ViewButton btn31 = new ViewButton();
-		btn31.setName("个人中心");
+		btn31.setName("登录页面");
 		btn31.setType("view");
-		btn31.setUrl(MenuManager.REAL_URL+"pages/weixin/login.jsp");
-		
-		CommonButton btn32 = new CommonButton();
-		btn32.setName("版本信息");
-		btn32.setType("click");
-		btn32.setKey("32");
+		btn31.setUrl(MenuManager.REAL_URL+"pages/admin/login.jsp");
 		
 		//###############################################一级子菜单
 		ComplexButton mainBtn1 = new ComplexButton();
-		mainBtn1.setName("会议");
+		mainBtn1.setName("一栏");
 		mainBtn1.setSub_button(new Button[] { btn10,btn11});
 
 		ComplexButton mainBtn2 = new ComplexButton();
-		mainBtn2.setName("公告板");  // 
+		mainBtn2.setName("二栏");  // 
 		mainBtn2.setSub_button(new Button[] { btn20,btn21});
 
 		ComplexButton mainBtn3 = new ComplexButton();
-		mainBtn3.setName("系统消息");// btn31, btn32, btn33,
-		mainBtn3.setSub_button(new Button[] {btn31,btn30,btn32});
+		mainBtn3.setName("三栏");// btn31, btn32, btn33,
+		mainBtn3.setSub_button(new Button[] {btn31});
 
 		/**
 		 * 这是公众号目前的菜单结构，每个一级菜单都有二级菜单项<br>
