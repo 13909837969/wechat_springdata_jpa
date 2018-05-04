@@ -10,7 +10,7 @@ import javax.persistence.Transient;
 import lombok.Data;
 
 /**
-  微信用户信息 用来存储的对象
+  寰俊鐢ㄦ埛淇℃伅 鐢ㄦ潵瀛樺偍鐨勫璞�
  */
 @Data
 @Entity
@@ -157,6 +157,8 @@ public class UserInfo {
 				+ ", subscribe_scene=" + subscribe_scene + ", qr_scene=" + qr_scene + ", qr_scene_str=" + qr_scene_str
 				+ "]";
 	}
+	
+	
 	
 	
 	

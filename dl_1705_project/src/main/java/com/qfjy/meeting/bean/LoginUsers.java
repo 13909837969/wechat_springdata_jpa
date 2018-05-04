@@ -59,10 +59,14 @@ public class LoginUsers {
 	public void setStatus(int status) {
 		this.status = status;
 	}
+	public LoginUsers() {
+		super();
+	}
 	@Override
 	public String toString() {
 		return "LoginUsers [id=" + id + ", username=" + username + ", password=" + password + ", lastCurrtDate="
 				+ lastCurrtDate + ", lastIp=" + lastIp + ", uid=" + uid + ", status=" + status + "]";
 	}
+	
 	
 }
