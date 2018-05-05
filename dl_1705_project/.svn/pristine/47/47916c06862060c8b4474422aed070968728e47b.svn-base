@@ -85,13 +85,7 @@ public class WeixinController {
 		// 4.2如果未绑定，跳到登录页面
 		return "/pages/weixin/login.jsp?openid=" + openid;
 	}
-<<<<<<< .mine
-} 
-||||||| .r30
-}
-=======
 
 	
 
 }
->>>>>>> .r32
